@@ -1,0 +1,203 @@
+$color_1: #fff;
+$color_2: #09bde0;
+$color_3: white;
+$color_4: #314652;
+$font-family_1: "montserrat";
+$font-family_2: "calibri";
+$background-color_1: #fff;
+$background-color_2: black;
+$background-color_3: #c4c4c2;
+$medida: 479px;
+
+@mixin mobile($medida: 320px) {
+  @media screen and (max-width: $medida) {
+    @content;
+  }
+}
+
+.navbar {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-brand {
+  color: $color_1;
+  font-size: 35px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../img/imagen-fondo.jpg");
+  height: 100vh;
+  width: 100%;
+  font-family: $font-family_1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.color-letra {
+  color: $color_1;
+  &:hover {
+    color: $color_2;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    transition: 0.5s;
+  }
+}
+.sin-hover {
+  &:hover {
+    color: $color_2;
+    transition: 0.5s;
+  }
+}
+.navbar-toggler {
+  background-color: $background-color_1;
+}
+.presentacion {
+  color: $color_1;
+  margin-top: 15%;
+}
+.bien {
+  color: $color_3;
+  margin-top: 10%;
+  h1 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .p-grande {
+    font-size: 40px;
+  }
+  span {
+    color: $color_2;
+    font-size: 18px;
+  }
+}
+.img-tamaño {
+  display: flex;
+  border: #8dc4b7 2px solid;
+  border-radius: 15px;
+  width: auto;
+  height: 350px;
+}
+.slide {
+  margin-top: 10px;
+  img {
+    width: 80vh;
+    height: 80vh;
+  }
+}
+.sombra {
+  font-weight: 900;
+  color: $color_3;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: $color_3;
+  background-color: $background-color_2;
+  margin-top: auto;
+  @include mobile($medida) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.formulario {
+  width: 400px;
+  background: #5d5a4e;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: $font-family_2;
+  box-shadow: 7px 13px 7px #000;
+  h1 {
+    font-size: 24px;
+    color: $color_1;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+.control {
+  width: 100%;
+  background-color: $background-color_3;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: 2px solid #09bde0;
+  font-family: $font-family_2;
+  font-size: 18px;
+}
+.boton {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  color: $color_3;
+  margin: 16px 0;
+  font-family: $font-family_1;
+  font-size: 22px;
+  background: #09bde0;
+}
+
+.acomodar {
+  display: flex;
+  margin: 100px;
+  height: 100px;
+  @include mobile($medida) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 40%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 50px;
+  }
+}
+
+.botones-redes {
+  a {
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(#a1ffce, #faffd1);
+    color: $color_4;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    margin-right: 50px;
+    @include mobile($medida) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 110px;
+      margin-left: 50px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.contactos-boton {
+  display: inline-block;
+  color: $color_1;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #09bde0;
+  border-radius: 25px;
+  &:hover {
+    color: $color_2;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    transition: 0.5s;
+  }
+}
