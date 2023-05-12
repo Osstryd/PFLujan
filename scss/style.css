@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 40%;
+    margin: 100px 40%;
   }
 }
 .acomodar .container {
@@ -189,6 +189,7 @@ body {
   .titulo-redes {
     margin-top: 10px;
     padding: 15px;
+    font-size: 15px;
   }
 }
 
@@ -197,6 +198,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 490px) {
+  .botones-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 40px;
+    font-size: 40px;
+    gap: 100px;
+  }
 }
 .botones-redes a {
   margin-top: 0;
@@ -211,18 +224,6 @@ body {
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
   margin-right: 50px;
-}
-@media screen and (max-width: 490px) {
-  .botones-redes a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 50px;
-    font-size: 40px;
-    padding: 10px;
-  }
 }
 .botones-redes a:hover {
   transform: scale(1.2);
