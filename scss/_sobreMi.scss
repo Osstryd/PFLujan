@@ -1,0 +1,18 @@
+.presentacion {
+  color: $color_1;
+  margin-top: 15%;
+}
+
+.contactos-boton {
+  display: inline-block;
+  color: $color_1;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #09bde0;
+  border-radius: 25px;
+  &:hover {
+    color: $color_2;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    transition: 0.5s;
+  }
+}

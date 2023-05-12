@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: $color_3;
+  background-color: $background-color_2;
+  margin-top: auto;
+  @include mobile($medida) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

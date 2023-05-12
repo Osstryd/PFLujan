@@ -1,0 +1,23 @@
+.bien {
+  color: $color_3;
+  margin-top: 10%;
+  h1 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .p-grande {
+    font-size: 40px;
+  }
+  span {
+    color: $color_2;
+    font-size: 18px;
+  }
+}
+
+.img-tamaño {
+  display: flex;
+  border: #8dc4b7 2px solid;
+  border-radius: 15px;
+  width: auto;
+  height: 350px;
+}

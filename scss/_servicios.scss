@@ -1,0 +1,18 @@
+#cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 150px;
+  @include mobile($medida) {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+}
+
+.card-text {
+  $font-family_1: "montserrat";
+}

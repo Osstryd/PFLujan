@@ -1,0 +1,38 @@
+.formulario {
+  width: 400px;
+  background: #5d5a4e;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: $font-family_2;
+  box-shadow: 7px 13px 7px #000;
+  h1 {
+    font-size: 24px;
+    color: $color_1;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+.control {
+  width: 100%;
+  background-color: $background-color_3;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: 2px solid #09bde0;
+  font-family: $font-family_2;
+  font-size: 18px;
+}
+
+.boton {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  color: $color_3;
+  margin: 16px 0;
+  font-family: $font-family_1;
+  font-size: 22px;
+  background: #09bde0;
+}
